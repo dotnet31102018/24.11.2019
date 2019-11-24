@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myTimerApp">
+
+<head>
+  <title>Hello angular JS!!</title>
+  <script src="angular.js"> </script>
+  <script src="bootstrap.js"></script>
+  <script src="timeCtrl.ctrl.js"></script>
+</head>
+
+<body>
+  <p>Hello angular JS!</p>
+  <div ng-controller="timeCtrl">
+    <!-- new TimeCtrl() -->
+    <p>clock-1</p>
+    <h1>{{time}}</h1>
+    <h1>{{name}}</h1>
+    <h1>{{number}}</h1>
+    <button ng-click="increase()">PLUS 1</button>
+  </div>
+  <div ng-controller="timeCtrl">
+    <!-- new TimeCtrl() -->
+    <p>clock-2</p>
+    <h1>{{time}}</h1>
+    <h1>{{name}}</h1>
+    <h1>{{number}}</h1>
+    <button ng-click="increase()">PLUS 1</button>
+  </div>
+</body>
+
+</html>
